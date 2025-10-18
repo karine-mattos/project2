@@ -1,42 +1,228 @@
+:root {
+  --blue: #0E1238;
+  --purple: #250a1c;
+  --sans: "Roboto", sans-serif;
+  --serif: "Lora", serif;
+}
 
-/* basic responsive image css */
-img, video{
+img,
+video {
   max-width: 100%;
   height: auto;
 }
 
-.landmarks-grid{
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.picture {
+  max-width: 100%;
+  height: auto;
+  margin: 70px;
 }
 
-figure{ margin:0;}
+html {
+  font-size: 18px;
+}
+
+head {
+  font-family: Roboto;
+}
+
+body {
+  font-family: var(--sans), var(--serif);
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.site-title {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #0E1238;
+}
+
+.introWrapper {
+  background-color: #b0a4ac;
+  padding: 50px;
+  padding-top: 1px;
+  border-top: 10px;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: 60px;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: var(--purple);
+}
+
+.intro {
+  font-family: var(--sans);
+  font-size: 30px;
+  font-optical-sizing: auto;
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 0;
+  font-weight: 600;
+  color: var(--purple);
+}
+
+p {
+  font-family: var(--sans);
+  font-size: 20px;
+  font-optical-sizing: auto;
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-weight: 500;
+  letter-spacing: -.5px;
+  color: var(--purple);
+}
 
 /* --------------------
 Resposive Video
  --------------------*/
 .videoWrapper {
-	position: relative;
-	padding-top: 25px;
-	height: 0;
-  clear:both;
+  position: relative;
+  padding-top: 25px;
+  height: 0;
+  clear: both;
+  margin: 0 8px;
+  /* actual outside space */
+  box-shadow: 0 0 0 8px #b0a4ac;
+  /* draws 8px color around */
 }
 
 /* 16:9 aspect ratio wrapper */
-.videoWrapper.ratio-16-9{
-    padding-bottom: 56.25%; /* 9 ÷ 16 = .5625 which is 56.25% */
+.videoWrapper.ratio-16-9 {
+  padding-bottom: 56.25%;
+  /* 9 ÷ 16 = .5625 which is 56.25% */
 }
 
 /* 4:3 aspect ratio wrapper */
-.videoWrapper.ratio-4-3{
-    padding-bottom: 75%; /* 3 ÷ 4 = .75 which is 75% */
+.videoWrapper.ratio-4-3 {
+  padding-bottom: 75%;
+  /* 3 ÷ 4 = .75 which is 75% */
 }
 
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.featuredWrapper {
+  background-color: #f9f9f9;
+  padding: 50px;
+  padding-top: 1px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-size: 60px;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: var(--purple);
+}
+
+.gridWrapper {
+  background-color: #9F8F99;
+  padding: 50px;
+  padding-top: 1px;
+}
+
+.landmarks-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.landmark {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #b9aeb5;
+}
+
+.figure {
+  position: relative;
+}
+
+.figcaption {
+  position: absolute;
+  right: 5px;
+  bottom: -30px;
+  padding: 8px;
+  background-color: var(--blue);
+  opacity: .85;
+  font-family: var(--serif);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.figcaption a {
+  text-decoration: none;
+}
+
+.figcaption a:link,
+.figcaption a:visited {
+  color: #f9f9f9;
+}
+
+.figcaption a:hover {
+  color: #b9aeb5;
+
+}
+
+h3 {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-optical-sizing: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-button {
+  display: inline-block;
+  color: #19183B;
+  background: #E7F2EF;
+  padding: 15px;
+  border-bottom: 10px;
+  font-family: var(--sans);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-button:hover {
+  color: #E7F2EF;
+  background: var(--blue);
+
+}
+
+.footer {
+  font-family: var(--serif);
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--blue);
 }
