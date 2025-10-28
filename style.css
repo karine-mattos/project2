@@ -7,26 +7,22 @@
 
 img,
 video {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
 .picture {
   max-width: 100%;
-  height: auto;
-  margin: 70px;
+  margin: 70px auto;
 }
 
 html {
   font-size: 18px;
 }
 
-head {
-  font-family: Roboto;
-}
-
 body {
-  font-family: var(--sans), var(--serif);
+  font-family: var(--sans);
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
@@ -42,7 +38,7 @@ body {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #0E1238;
+  color: var(--blue);
 }
 
 .introWrapper {
