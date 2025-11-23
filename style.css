@@ -425,9 +425,8 @@ h3 {
 
 #pagination {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: var(--space-xs);
   margin: var(--space-xs) 0;
   background-color: #b0a4ac;
   border-radius: 0 0 8px 8px;
